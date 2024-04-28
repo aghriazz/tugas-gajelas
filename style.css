@@ -1,0 +1,127 @@
+/* Style untuk elemen navbar */
+#navbar {
+    background-color: rgba(0, 0, 0); /* Latar belakang hitam dengan opacity sebelum digulir */
+    color: #fff;
+    padding: 9px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: background-color 0.3s ease;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style untuk gambar logo */
+header img {
+    height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover efek untuk tautan tombol bagian di navbar sebelum digulir */
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.5); /* Latar belakang semi-transparent putih saat dihover sebelum digulir */
+}
+
+/* Hover efek untuk tautan tombol bagian di navbar setelah digulir */
+#navbar.scrolled nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.4); /* Latar belakang semi-transparent hitam saat dihover setelah digulir */
+}
+
+
+/* Padding atas untuk konten di dalam bagian "Tentang Saya" */
+#about {
+    padding-top: 100px;
+}
+
+/* Tambahkan warna latar belakang untuk navbar saat digulir */
+#navbar.scrolled {
+    background-color: #fff; /* Warna latar belakang putih setelah digulir */
+    color: #000; /* Warna teks hitam setelah digulir */
+}
+
+/* Warna teks yang berubah saat digulir */
+#navbar.scrolled nav ul li a {
+    color: #000; /* Warna teks hitam setelah digulir */
+}
+
+/* Sembunyikan logo kedua secara default */
+#logo {
+    display: none;
+}
+
+/* Style untuk footer */
+footer {
+    background-color: #333; /* Warna latar belakang untuk footer */
+    color: #fff; /* Warna teks putih */
+    padding: 20px;
+    text-align: center; /* Teks di tengah */
+}
+
+
+#contact{
+    padding-top: 200px;
+}
+
+/* Gaya untuk bagian "Tentang Saya" */
+#about {
+    padding: 50px 20px; /* Sesuaikan dengan kebutuhan */
+}
+
+/* Gaya untuk konten di dalam bagian "Tentang Saya" */
+.about-content {
+    display: flex;
+    align-items: center;
+}
+
+/* Gaya untuk teks di dalam bagian "Tentang Saya" */
+.about-text {
+    flex: 1;
+    text-align: left; /* Posisikan teks ke kiri */
+}
+
+.about-text h1 {
+    font-size: 70px;
+}
+
+.about-text h2{
+    font-size: 40px;
+}
+
+/* Gaya untuk gambar di dalam bagian "Tentang Saya" */
+.about-image {
+    flex: 1;
+    text-align: right; /* Posisikan gambar ke kanan */
+}
+
+/* Gaya untuk memastikan gambar tidak terlalu besar */
+.about-image img {
+    width: 200px; /* Sesuaikan lebar gambar */
+    height: auto; /* Biarkan tinggi gambar menyesuaikan proporsi aslinya */
+    padding-top: 50px;
+    padding-right: 100px;
+}
+
