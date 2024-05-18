@@ -1,6 +1,11 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 /* Style untuk elemen navbar */
 #navbar {
-    background-color: rgba(0, 0, 0); /* Latar belakang hitam dengan opacity sebelum digulir */
+    background-color: rgb(38, 22, 22); /* Latar belakang hitam dengan opacity sebelum digulir */
     color: #fff;
     padding: 9px;
     position: fixed;
@@ -51,7 +56,6 @@ nav ul li a:hover {
     background-color: rgba(0, 0, 0, 0.4); /* Latar belakang semi-transparent hitam saat dihover setelah digulir */
 }
 
-
 /* Padding atas untuk konten di dalam bagian "Tentang Saya" */
 #about {
     padding-top: 100px;
@@ -81,24 +85,26 @@ footer {
     text-align: center; /* Teks di tengah */
 }
 
-
-#contact{
-    padding-top: 200px;
-}
-
 /* Gaya untuk bagian "Tentang Saya" */
 #about {
-    padding: 50px 20px; /* Sesuaikan dengan kebutuhan */
+    width: 100%;
+    height: 100vh;
+    padding-top: 0px;
+    background-image: url('Desain\ tanpa\ judul.png'); /* Tambahkan gambar sebagai latar belakang */
+    background-size: cover; /* Pastikan gambar diatur agar mencakup seluruh area */
+    background-position: center; /* Posisikan gambar di tengah */
 }
 
 /* Gaya untuk konten di dalam bagian "Tentang Saya" */
 .about-content {
     display: flex;
     align-items: center;
+    padding-top: 100px;
 }
 
 /* Gaya untuk teks di dalam bagian "Tentang Saya" */
 .about-text {
+    color: white;
     flex: 1;
     text-align: left; /* Posisikan teks ke kiri */
 }
@@ -107,21 +113,110 @@ footer {
     font-size: 70px;
 }
 
-.about-text h2{
+.about-text h2 {
     font-size: 40px;
 }
 
 /* Gaya untuk gambar di dalam bagian "Tentang Saya" */
 .about-image {
-    flex: 1;
-    text-align: right; /* Posisikan gambar ke kanan */
+    text-align: right;
 }
 
 /* Gaya untuk memastikan gambar tidak terlalu besar */
 .about-image img {
-    width: 200px; /* Sesuaikan lebar gambar */
+    width: 300px; /* Sesuaikan lebar gambar */
     height: auto; /* Biarkan tinggi gambar menyesuaikan proporsi aslinya */
-    padding-top: 50px;
-    padding-right: 100px;
+    padding-right: 200px;
+    padding-left: 200px;
 }
 
+.para {
+    color: white;
+     text-align: left;
+    padding-left: 50px;
+}
+
+.titl {
+    text-align: center; /* Posisikan teks ke tengah secara horizontal */
+    padding-top: 30px;
+    color: rgb(193, 176, 144);
+    margin-bottom: 20px; /* Tambahkan margin bawah untuk menjaga jarak antara teks dan elemen di bawahnya */
+}
+
+/* Gaya untuk bagian Pengalaman */
+/* Gaya untuk bagian Pengalaman */
+#experience {
+    padding: 50px 20px;
+    display: flex;
+justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    min-height: 500px; /* Membuat tinggi minimum setara dengan tinggi layar */
+}
+
+
+/* Gaya untuk elemen pengalaman */
+.experience-item {
+    text-align: center;
+    background-color: #5f5050;
+    padding: 4px;
+    width: 200px; /* Tiga elemen per baris dengan jarak antar elemen */
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease, background-color 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    height: 30px; /* Tinggi awal elemen */
+}
+.experience-item h3 {
+    color: wheat;
+}
+
+/* Efek hover untuk elemen pengalaman */
+.experience-item:hover {
+    background-color: #4e2828; /* Warna latar belakang saat dihover */
+    height: 50px;
+    width: 250px;
+}
+
+/* Gaya untuk teks deskripsi, tersembunyi secara default */
+.experience-text {
+    color: rgb(255, 255, 255);
+    display: none;
+    margin-top: 10px;
+}
+
+.experience-text img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Gaya untuk elemen pengalaman saat diperbesar */
+.experience-item.expanded {
+    transform: scaleY(1.1); /* Perbesar elemen secara vertikal */
+    height: 100%; /* Tinggi setelah elemen diperbesar */
+}
+
+/* Tampilkan teks deskripsi saat elemen diperbesar */
+.experience-item.expanded .experience-text {
+    display: block;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; /* Tambahkan margin bawah untuk memberi ruang antara kontak dan teks hak cipta */
+}
+
+.contact a {
+    margin-right: 20px; /* Tambahkan margin kanan untuk memberi ruang antara ikon dan teks */
+    color: #fff; /* Warna teks */
+    text-decoration: none; /* Hilangkan dekorasi tautan */
+}
+
+.contact img {
+    width: 20px; /* Ukuran ikon */
+    height: 20px;
+    margin-right: 5px; /* Tambahkan margin kanan kecil antara ikon dan teks */
+}

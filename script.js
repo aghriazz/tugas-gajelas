@@ -18,7 +18,6 @@ window.addEventListener('scroll', function() {
     }
 });
 
-
 // Fungsi untuk menangani klik pada tautan navbar
 document.querySelectorAll('nav ul li a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
@@ -33,3 +32,19 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
         targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
 });
+
+// Fungsi untuk menambah atau menghapus kelas 'expanded' pada elemen yang diklik
+function toggleExpand(element) {
+    // Periksa apakah elemen sudah dalam keadaan diperbesar
+    const isExpanded = element.classList.contains('expanded');
+    
+    // Kembalikan semua elemen ke ukuran normal
+    document.querySelectorAll('.experience-item').forEach(item => {
+        item.classList.remove('expanded');
+    });
+    
+    // Jika elemen belum diperbesar, perbesar elemen yang diklik
+    if (!isExpanded) {
+        element.classList.add('expanded');
+    }
+}
