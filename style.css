@@ -151,7 +151,7 @@ footer {
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-    min-height: 480px; /* Membuat tinggi minimum setara dengan tinggi layar */
+    min-height: 450px; /* Membuat tinggi minimum setara dengan tinggi layar */
 }
 
 
