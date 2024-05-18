@@ -90,7 +90,7 @@ footer {
     width: 100%;
     height: 100vh;
     padding-top: 0px;
-    background-image: url('Desain\ tanpa\ judul.png'); /* Tambahkan gambar sebagai latar belakang */
+    background-image: url('pict/Desain\ tanpa\ judul.png'); /* Tambahkan gambar sebagai latar belakang */
     background-size: cover; /* Pastikan gambar diatur agar mencakup seluruh area */
     background-position: center; /* Posisikan gambar di tengah */
 }
@@ -126,8 +126,8 @@ footer {
 .about-image img {
     width: 300px; /* Sesuaikan lebar gambar */
     height: auto; /* Biarkan tinggi gambar menyesuaikan proporsi aslinya */
-    padding-right: 200px;
-    padding-left: 200px;
+    padding-right: 200px; 
+    padding-left: calc(100vh - 90vh) ;
 }
 
 .para {
@@ -148,10 +148,10 @@ footer {
 #experience {
     padding: 50px 20px;
     display: flex;
-justify-content: center;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-    min-height: 500px; /* Membuat tinggi minimum setara dengan tinggi layar */
+    min-height: 480px; /* Membuat tinggi minimum setara dengan tinggi layar */
 }
 
 
