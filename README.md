@@ -1,1 +1,1 @@
-# tugasgajelas.github.io
+# tugasgaje.github.io
